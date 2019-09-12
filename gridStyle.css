@@ -1,0 +1,43 @@
+html, body{
+    height: 100%;
+}
+
+header,footer,aside,article{
+    background-color:grey;
+}
+#container{
+    height: 100%;
+    text-align: center;
+    display:grid;
+    grid-gap: 3%;
+    grid-template-columns: 17.5% 1fr 17.5%;
+    grid-template-rows: 1fr 50% 1fr;
+    grid-template-areas:
+        "header header header"
+        "sidebar article sidebar2"
+        "footer footer footer";
+}
+
+header{
+    grid-area: header;
+}
+
+#sidebar1{
+    grid-area: sidebar;
+}
+
+article{
+    grid-area: article;
+}
+
+#sidebar2{
+    grid-area: sidebar2;
+}
+
+footer{
+    grid-area: footer;
+}
+
+/**{*/
+/*    border: 1px solid black;*/
+/*}*/
